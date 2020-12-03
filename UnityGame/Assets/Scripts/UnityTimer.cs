@@ -20,9 +20,11 @@ public sealed class UnityTimer : MonoBehaviour
 
   private void Update()
   {
+    if (!Running) return;
+
     _timeRan += Time.deltaTime;
 
-    if (_timeRan >= seconds && Running)
+    if (_timeRan >= seconds)
     {
       Running = false;
       OnTimeout();
