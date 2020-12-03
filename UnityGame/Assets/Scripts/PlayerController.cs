@@ -10,8 +10,9 @@ public sealed class PlayerController : MonoBehaviour
     var x = Input.GetAxis("Vertical");
     var y = Input.GetAxis("Horizontal");
 
-    var movementDirNormalized = transform.forward * x + transform.right * y;
+    var inputDir = transform.forward * x + transform.right * y;
+    inputDir.Normalize();
 
-    controller.Move(movementDirNormalized * MovementSpeed * Time.deltaTime);
+    controller.Move(inputDir * MovementSpeed * Time.deltaTime);
   }
 }
