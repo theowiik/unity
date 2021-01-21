@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Scripting;
 
 public sealed class Gun : MonoBehaviour
 {
