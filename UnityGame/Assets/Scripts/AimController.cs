@@ -2,7 +2,7 @@
 
 public sealed class AimController : MonoBehaviour
 {
-  private const            float     Speed = 200f;
+  private const            float     Speed = 400f;
   [SerializeField] private Transform playerBody;
   private                  float     _xRotation;
 
