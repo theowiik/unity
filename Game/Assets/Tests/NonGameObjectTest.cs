@@ -1,26 +1,15 @@
-using System.Collections;
 using NUnit.Framework;
-using UnityEngine.TestTools;
+using Assert = UnityEngine.Assertions.Assert;
 
 namespace Tests
 {
   public sealed class NonGameObjectTest
   {
-    // A Test behaves as an ordinary method
     [Test]
-    public void NonGameObjectTestSimplePasses()
+    public void AddTest()
     {
-      // Use the Assert class to test conditions
-    }
-
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator NonGameObjectTestWithEnumeratorPasses()
-    {
-      // Use the Assert class to test conditions.
-      // Use yield to skip a frame.
-      yield return null;
+      var obj = new NonGameObject();
+      Assert.AreEqual(obj.Add(1, 1), 2);
     }
   }
 }

@@ -3,6 +3,8 @@
 /// </summary>
 public sealed class NonGameObject
 {
+  public NonGameObject(){}
+  
   /// <summary>
   ///   Adds two numbers and returns the total.
   /// </summary>
