@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using Assert = UnityEngine.Assertions.Assert;
 
-namespace Tests
+namespace Editor
 {
   public sealed class NonGameObjectTest
   {
