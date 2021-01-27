@@ -9,8 +9,7 @@ Some notes on how to do stuff
 ### How to create the file structure
 
 1. Create a Unity project and place the root **folder** of the project inside the repository.
-2. Create a gitignore with [gitignore.io](https://www.toptal.com/developers/gitignore?templates=unity,jetbrains,jetbrains+all,rider,code,csharp) and place it in the root directory of the Unity project.
-3. Add `.idea/` if you use a JetBrains editor and don't want to push any files from it.
+2. Create a gitignore with [gitignore.io](https://www.toptal.com/developers/gitignore?templates=unity) and place it in the root directory of the Unity project.
 
 ### How to add testing
 
